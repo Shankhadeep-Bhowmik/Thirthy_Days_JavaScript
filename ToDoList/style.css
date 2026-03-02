@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f3d3dc9;
+}
+.container{
+  /* border: 1px solid white; */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to left bottom, rgba(6, 145, 170, 0.829), rgba(80, 30, 216, 0.781));
+}
+.headingText{
+  text-align: center;
+  margin-bottom: 15px;
+  color: rgb(233, 228, 228);
+}
+.inputBar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+#inputTask{
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+  color: rgba(44, 43, 43, 0.87);
+  text-align: center;
+  background-color: hwb(0 97% 2% / 0.993);
+  width: 100%;
+}
+#inputTask:focus{
+  outline: none;
+}
+.addBtn{
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  background-color: hsl(106, 87%, 41%);
+  cursor: pointer;
+}
+.addBtn:hover{
+  background-color: hsla(106, 84%, 58%, 0.925);
+}
+#taskList{
+  list-style-type: none;
+}
+.task-container{
+  padding: 10px;
+  width: 100%;
+  min-height: 270px;
+  max-height: 270px;
+  overflow-y: scroll;
+}
+li{
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px;
+  background-color: #9490909a;
+  border-radius: 10px;
+}
+span{
+  width: 100%;
+  color: white;
+  margin-left: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+li button{
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.completeBtn{
+  background-color: #45af07;
+}
+.completeBtn:hover{
+  background-color: #54da06
+}
+.deleteBtn{
+  background-color: #b10d0d;
+}
+.deleteBtn:hover{
+  background-color: #ee0707;
+}
