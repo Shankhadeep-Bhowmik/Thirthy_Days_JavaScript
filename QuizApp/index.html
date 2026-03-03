@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="style.css"
+      rel="stylesheet"
+    />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <header class="heading">
+        <button class="leftArrow" id="leftArrow" onclick="leftArr()"><</button>
+        <div style="width: 100%; text-align: center;">
+          <h1>Quiz App</h1>
+        </div>
+        <button class="rightArrow" id="rightArrow" onclick="rightArr()">></button>
+      </header>
+      <main class="main">
+        <div class="questionArea">
+          <h3 id="questionNum" style="margin-bottom: 5px;"></h3>
+          <h3 id="question" style="margin-bottom: 20px;"></h3>
+          <div class="answers" id="answers">
+            <!-- will be handled in js -->
+
+          </div>
+        </div>
+      </main>
+      <div class="horizontal-line"></div>
+      <footer class="footer">
+        <!-- will be handled in js -->
+         <p id="numberOfQuestion"></p>
+         <div class="buttons">
+           <button id="save">save</button>
+           <button id="resultBtn">view result</button>
+         </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
